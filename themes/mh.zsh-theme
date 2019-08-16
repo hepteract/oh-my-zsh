@@ -11,7 +11,7 @@ if [ $UID -eq 0 ]; then NCOLOR="green"; else NCOLOR="white"; fi
 
 function ssh_connection() {
   if [[ -n $SSH_CONNECTION ]]; then
-    echo "%b$fg[white]@%B$fg[yellow]%m"
+    echo "%b$fg[yellow]@%B$fg[yellow]%m"
   fi
 }
 
